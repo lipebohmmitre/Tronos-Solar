@@ -1,0 +1,72 @@
+.AboutImagesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.ImageAndTextContainer{
+    margin: 0 auto;   
+    text-align: center; 
+    margin-bottom: 30px;
+}
+
+.AboutImagesContainer.Work .ImageAndTextContainer{
+    width: 350px;
+}
+
+.AboutImagesContainer.People .ImageAndTextContainer{
+    width: 250px
+}
+
+.AboutImagesContainer.Work .ImageAndTextContainer .ImageContainer{
+    width: 315px;
+    height: 292px;
+}
+
+.AboutImagesContainer.People .ImageAndTextContainer .ImageContainer{
+    width: 235px;
+    height: 235px;
+}
+
+.ImageAndTextContainer p{
+    margin-top: 15px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+
+    text-align: center;
+
+    color: #222222;
+}
+
+.ImageAndTextContainer p:nth-of-type(2){
+    font-weight: 400;
+}
+
+.ImageContainer{
+    margin: 0 auto; 
+    position: relative;
+}
+
+.ImageContainer img{
+    width: 100%;
+    height: 100%;
+}
+
+.AboutTextContainer{
+    margin: 10px 0 40px 0;
+}
+
+.AboutTextContainer p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+    color: #222222;
+    margin-bottom: 20px;
+}

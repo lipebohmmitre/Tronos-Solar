@@ -1,0 +1,68 @@
+.RecommendedKitsContainer{
+    border-radius: 10px;
+    width: 100%;
+    border: 3px solid #a3a3a3;
+}
+
+.RecommendedKitsTitleContainer{
+    text-align: left;
+}
+
+.RecommendedKitsTitleContainer p{
+    margin-top: 7px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+
+.RecommendedKitsMainContainer{
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+.IndividualKitContainer{
+    width: 254px;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.KitImgContainer{
+    height: 300px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-style: solid;
+    margin: 3px;
+    border: 1px solid #0000001a;
+    border-radius: 4px;
+
+    padding: 8px;
+}
+
+.KitImgContainer img{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+.KitInfoContainer{
+    margin: 10px 0;
+    text-align: center;
+}
+
+.KitInfoContainer p{
+    margin-bottom: 10px;
+}
+
+.KitPotencialSavePercentage{
+    background-color: rgb(133, 245, 133);
+    font-weight: 600;
+}

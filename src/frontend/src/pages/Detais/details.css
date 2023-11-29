@@ -1,0 +1,224 @@
+#centralDetails {
+    display: flex;
+}
+
+#esquerdaDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+}
+
+
+.ProductImgContainerDetails {
+    height: 300px;
+    width: 254px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-style: solid;
+    margin: 0 30px;
+    border: 1px solid #0000001a;
+    border-radius: 4px;
+
+    padding: 8px;
+
+    cursor: pointer;
+}
+
+.ProductImgContainerDetails img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+
+#direitaDetails {
+    display: flex;
+    width: 50%;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+}
+.deireitaDetailsCont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#descriptionDetais {
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 3%;
+}
+
+.btnCart {
+    background: linear-gradient(91.21deg, #E98F00 -1.98%, #E98F00 36.4%, #0AA2EE 103.86%);
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
+    border-radius: 3px;
+    width: 211px;
+    height: 60px;
+    border: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 165.5%;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.btnMontaKit{
+    margin-top: 10px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+.btnCart:hover {
+    background: linear-gradient(50.21deg, #E98F00 36.4%, #fab649 103.86%, #ecf1f5 -1.98%);
+    transition: 0.9s ease;
+}
+.BtnLess {
+    height: 50px;
+    width: 50px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.BtnPlus {
+    height: 50px;
+    width: 50px;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.QtdText{
+    height: 50px;
+    width: 50px;
+    left: 846px;
+    top: 433px;
+    border-radius: 4px;
+}
+
+#bntDireita{
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    color: #000000;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    margin: 0px 2% 0 2%;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+.deireitaDetailsCont{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 0 3% 0;
+}
+.qntCont{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 140.5%;
+    color: #222222;
+    margin: 0 0 3% 0;
+}
+.descriptionTxt{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 165.5%;
+    color: #222222;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    margin: 3% 0 1.5% 0;
+}
+#subDescTxt{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 200%;
+    color: #000000;
+}
+.buttonsDetailsCont{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+@media screen and (max-width:1000px){
+    #esquerdaDetails {
+        margin-top: 12%!important;
+        max-height: 306px!important;
+    }
+    .qntCont {
+        font-size: 35px!important;
+    }
+    #centralDetails{
+        max-height: 430px!important;
+    }
+}@media screen and (max-width:800px){
+    #centralDetails {
+        max-height: 380px!important;
+    }
+    #esquerdaDetails {
+        margin-top: 18%!important;
+        width: 55%!important;
+    }
+}
+@media screen and (max-width:680px){
+    #centralDetails {
+        max-height: 328px!important;
+    }
+    .qntCont {
+        font-size: 30px!important;
+    }
+    #bntDireita {
+        width: 40px!important;
+        height: 37px!important;
+    }
+    #esquerdaDetails{
+        margin-top: 8%!important;
+        width: 67%!important;
+    }
+    #direitaDetails {
+        margin-top: 10%!important;
+        justify-content: flex-start!important;
+    }
+}
+@media screen and (max-width:540px){
+    .btnMontaKit {
+        margin-left: 32px!important;
+    }
+}
+@media screen and (max-width:450px){
+    #centralDetails {
+        max-height: 250px!important;
+    }
+    .btnCart {
+        width: 175px!important;
+    }
+    .qntCont {
+        font-size: 23px!important;
+    }
+    #bntDireita {
+        width: 35px!important;
+        height: 25px!important;
+    }
+    .priceTxt{
+        font-size: 14px!important;
+        margin-left: 5px;
+    }
+}

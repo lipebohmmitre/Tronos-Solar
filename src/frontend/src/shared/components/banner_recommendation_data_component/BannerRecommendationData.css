@@ -1,0 +1,44 @@
+.BannerContainer{
+    background-color: #eefcff;
+    padding: 10px 20px;
+    margin: 0px 10px;
+    border-radius: 10px;
+    box-shadow: -3px 3px 5px rgba(0, 0, 0, .1);
+    text-align: center;
+    display: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.BannerInputContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.BannerInputContainer input{
+    margin: 5px 5px;
+}
+
+.BannerButton{
+    margin: 0 !important;
+    position: absolute !important;
+    right: 30px !important;
+}
+
+@media only screen and (max-width: 580px){
+    .BannerInputContainer{
+        display: block;
+    }
+
+    .BannerInputContainer input{
+        margin: 5px 0px;
+        width: 60%;
+        min-width: 150px;
+    }
+
+    .BannerButton{
+        margin: 0 auto !important;
+        position: relative !important;
+        right: 0px !important;
+    }
+}

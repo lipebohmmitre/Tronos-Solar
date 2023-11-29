@@ -1,0 +1,275 @@
+.headerContainer {
+    height: 135px;
+}
+
+.allCont {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+}
+
+.searchCont {
+    height: 100%;
+    width: 33%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative !important;
+}
+
+.searchCont input {
+    height: 46px;
+    width: 60%;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(238, 244, 252);
+}
+
+.headerSearchButton {
+    position: absolute;
+    background-color: #E98F00;
+    height: 46px;
+    width: 56px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerSearchButton img {
+    max-height: 25px;
+    max-width: 25px;
+}
+
+.logoCont {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoCont p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 0.03em;
+}
+
+.logoCont p:first-of-type {
+    margin-right: 7px;
+}
+
+.logoCont a {
+    text-decoration: none;
+    display: inherit;
+}
+
+.inputHeader::-webkit-input-placeholder {
+    padding-left: 20px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #222222;
+    opacity: 0.5;
+}
+
+.buttonsCont {
+    position: absolute;
+    right: 0;
+    z-index: 9;
+    top: 34px;
+    width: 43%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.wppButon {
+    background-color: #a3a3a3;
+    border: none;
+    border-radius: 6px;
+    color: #FFF;
+    height: 35px;
+    min-width: 25%;
+    margin-right: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 165.5%;
+    text-align: center;
+    cursor: pointer;
+    max-width: 45%;
+}
+
+.loginButon {
+    background-color: #E98F00;
+    border: none;
+    border-radius: 6px;
+    color: #FFF;
+    height: 35px;
+    min-width: 25%;
+    margin-right: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 165.5%;
+    text-align: center;
+    cursor: pointer;
+    max-width: 45%;
+}
+
+.subHeaderCarrinhoCont {
+    position: relative;
+}
+
+.iconIndicateNumberCart {
+    position: absolute;
+    top: -1px;
+    right: -10px;
+    transform: translate(50%, -50%);
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    justify-content: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width:1300px) {
+    .wppButon {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:845px) {
+    .buttonsContWithoutCart {
+        width: 87% !important;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .wppButon {
+        font-size: 10px;
+    }
+
+    .searchCont {
+        justify-content: flex-start;
+        margin-left: 20px;
+    }
+
+    .headerSearchButton {
+        display: none;
+    }
+
+    .buttonsCont {
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .logoCont p {
+        font-size: 25px;
+    }
+
+    .searchCont input {
+        height: 35px;
+        margin: 10px !important;
+    }
+
+    .inputHeader::-webkit-input-placeholder {
+        font-size: 12px;
+    }
+
+    .buttonsCont {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .logoCont p {
+        font-size: 20px;
+    }
+
+    .inputHeader::-webkit-input-placeholder {
+        padding-left: 5px !important;
+    }
+}
+
+.subHeaderAllCont {
+    width: 100%;
+    height: 55px;
+    background-color: #E98F00;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.subHeaderButtonCont {
+    padding: 3.3%;
+}
+
+.subHeaderButton {
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    cursor: pointer;
+    height: 50px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    color: #FFFFFF;
+
+    text-decoration: none;
+    padding-bottom: 2px;
+}
+
+.subHeaderButton:hover {
+    border-bottom: 2px solid #DDDDDD;
+}
+
+.buttonsContWithoutCart {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    max-height: 55px;
+}
+
+.carrinho {
+    cursor: pointer;
+}
+
+.searchResults {
+    position: absolute;
+    left: 13.5%;
+    background: white;
+    padding: 10px 20px 10px 20px;
+    top: -17px;
+    width: 16.5%;
+}
+.logoCont a img {
+    width: 205px;
+    height: auto;
+}

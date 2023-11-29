@@ -1,0 +1,176 @@
+.TitleCarousel{
+    height: 644px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.TitleCarousel h1{
+    margin: 0
+}
+
+.LeftSideMessage{
+    height: 100%;
+    width: 50%;
+}
+
+.RightSideCarousel {
+    height: 100%;
+    width: 50%;
+    max-width: 1200px;
+    margin-top: 2%;
+}
+
+.CarouselContainer {
+    margin: 15px;
+    text-align: center;
+}
+
+.CarouselContainer img {
+    width: auto;
+    height: 550px;
+}
+
+.img-carroussel{
+    width: 100%;
+    object-fit: cover;
+}
+
+.slick-slide img {
+    margin: 0 auto;
+    display: block;
+}
+
+.slick-dots {
+    bottom: -15px !important;
+}
+
+.slick-dots li {
+    margin: 0 3.41px !important;
+    width: 9.11px !important;
+    height: 9.11px !important;
+}
+
+.slick-dots li button {
+    background-color: #0065A433 !important;
+    border-radius: 15px !important;
+    width: 9.11px !important;
+    height: 9.11px !important;
+}
+
+.slick-dots li button::before{
+    color: transparent !important;
+} 
+
+.slick-dots .slick-active button {
+    background-color: #E98F00 !important;
+}
+
+.TitleCarouselText{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 73px;
+    text-transform: uppercase;
+    color: #000000;
+
+    margin-bottom: 90px;
+}
+
+.LeiaMais{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+    text-transform: capitalize;
+    padding: 2px 38px 2px 21px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    text-decoration: none;
+    box-shadow: -3px 3px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.LeiaMaisContainer{
+    margin: 20px 0 66px 0;
+}
+
+.TextoDescritivo{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px; 
+    color: #000000;
+    opacity: 0.8;
+    text-justify: newspaper;
+    text-align: left;
+}
+
+.ButtonKitContainer{
+    margin-top: 53px;
+}
+
+.ButtonKit{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    background-color: #E98F00;
+    padding: 17px 40px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #FFFF;
+    box-shadow: -3px 3px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.ButtonKit:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.TextContainer{
+    text-align: left;
+    width: 83%;
+
+    padding: 131px 0 0 0;
+    padding-left: min(150px, 10%);
+}
+
+@media only screen and (max-width: 1308px){
+    .TextContainer{
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .TitleCarousel{
+        height: 1160px;
+    }
+
+    .LeftSideMessage{
+        width: 100%;
+        height: auto;
+    }
+
+    .RightSideCarousel{
+        width: 100%;
+        height: 50%;
+    }
+
+    .BackgroundSvg{
+        height: 1200px;
+    }
+
+    .slick-dots li button {
+        background-color: #e1eef7 !important;
+    }
+    
+    .slick-dots .slick-active button {
+        background-color: #003557 !important;
+    }
+}

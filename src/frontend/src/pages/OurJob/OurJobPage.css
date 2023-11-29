@@ -1,0 +1,71 @@
+.OurJobImageContainer{
+    width: 100%;
+    max-height: 350px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.OurJobImageContainer img{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+.OurJobTextContainer p{
+    margin-bottom: 20px;
+}
+
+.OurJobTextContainer p.Subtitle{
+    margin-bottom: 10px;
+}
+
+.OurJobHorizontalTabs button{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 30px;
+    color: #848484;
+}
+
+.OurJobHorizontalTabs button.Mui-selected {
+    color: #222222;
+}
+.css-1aquho2-MuiTabs-indicator{
+    background-color: #E98F00!important;
+}
+
+.MuiBox-root.css-19kzrtu{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.TabImageSection{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.TabImageContainer{
+    width: 550px;
+    height: 375px;
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.TabImageContainer img{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+@media only screen and (min-width: 1120px){
+    .MuiTabs-flexContainer.css-heg063-MuiTabs-flexContainer{
+        justify-content: center;
+    }
+}

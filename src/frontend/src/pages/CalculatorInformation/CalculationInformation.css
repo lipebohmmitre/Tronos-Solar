@@ -1,0 +1,61 @@
+.CalculatorContainer input, select{
+    height: 30px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border-color: #E98F00;
+}
+
+.CalculatorContainer{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.CalculatorButtonCalculateContainer{
+    margin-top: 10px;
+}
+
+.CalculatorInputs label{
+    display: inline-block;
+    width: 50%;
+}
+
+.CalculatorInputs input,select{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+
+    background: #F4F4F4;
+    border-color: transparent;
+    border-radius: 4px;
+
+    height: 40px;
+    padding: 0 10px;
+    margin: 10px 0px;
+
+    width: 50%;
+}
+
+.CalculatorInputs select {
+    cursor: pointer;
+}
+
+.CalculatorValidationMessagesContainer{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.CalculatorValidationMessagesContainer label{
+    color: red;
+}
+
+.CalculatorResultsContainer{
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 500px){
+    .CalculatorInputs input,select{
+        width: 100%;
+    }
+}

@@ -1,0 +1,110 @@
+.chatBotCont{
+    width: 300px;
+    height: 400px;
+    background-color: #fcfcfc;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.chatBotHeader{
+    width: 100%;
+    display: flex;
+    text-align: start;
+    background: #E98F00;
+    font-weight: 600;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    height: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chatBotBody{
+    width: 100%;
+    display: flex;
+}
+.botSide img{
+    max-width: 40px;
+    max-height: 40px;
+    margin-top: 10px;
+}
+.chatBotAllCont{
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    right: -400px;
+}
+.chatBotHeader p {
+    padding-left: 5px;
+    color: #FFF;
+}
+.closeChatBot{
+    max-width: 15px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.botSide{
+    max-width: 20%;
+    width: 20%;
+    padding-left: 5px;
+    position: absolute;
+    max-height: 100px;
+}
+.bubbleIcon{
+    width: 30px;
+}
+.botMessageBox{
+    margin-top: 9px;
+    text-align: start;
+    font-size: 13px;
+    padding: 7px;
+    margin-right: 6px;
+    margin-left: 59px;
+    background-color: #959595;
+    border-radius: 8px;
+    color: #FFF;
+}
+.meSide{
+    margin-top: 40%;
+}
+.buttonCont{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+.buttonCont button{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 17px;
+    text-transform: uppercase;
+    background: #E98F00;
+    padding: 17px 40px;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    text-decoration: none;
+    color: #ffffff;
+    border: none;
+    margin: 5px 0 5px 0;
+    width: 89%;
+    max-height: 35px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+}
+.buttonCont button a{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+}
+.sideTalk{
+    height: 400px;
+}

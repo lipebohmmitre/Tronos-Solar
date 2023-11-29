@@ -1,0 +1,567 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../assets/fonts/NunitoSans-VariableFont_YTLC.ttf') format('truetype'),
+        url('../../assets/fonts/NunitoSans-Italic-VariableFont_YTLC.ttf') format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype'),
+        url('../../assets/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('woff');
+}
+
+h1, h2,h3, h4, h5, h6, p, a, span, text, textarea {
+    font-family: Nunito Sans, sans-serif;
+}
+
+.AdminHeader {
+    background: #FFFFFF;
+    width: 100%;
+    height: 56px;
+}
+
+.LogoContainer{
+    margin-left: 52px;
+}
+.LogoContainer img{
+    width: 70px;
+    cursor: pointer;
+}
+
+.LogoContainer label{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 0.03em;
+    color: #E98F00;
+    margin-right: 10px;
+}
+
+
+.LogoContainer label:last-child{
+    color: #00853F;
+}
+
+.AdminMain {
+    background-color: #f2f4f8;
+    display: flex;
+    min-height: calc(100vh - 56px);
+}
+
+.AdminSideMenu{
+    width: 240px; 
+}
+
+.AdminSideMenu p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #64748B;
+    cursor: pointer;
+
+    margin: 0 20px 12px 52px;
+}
+
+.AdminSideMenu p:first-child{
+    margin-top: 30px;
+}
+
+.AdminSideMenu p:hover{
+    color: #E98F00;
+}
+
+.AdminSideMenu p.Selected{
+    font-weight: 800;
+    color: #E98F00;
+}
+
+.AdminContent{
+    width: calc(100% - 240px);
+    padding: 30px 40px 40px 40px;
+}
+
+.CrudTitleContainer{
+    margin-bottom: 12px;
+}
+
+.CrudTitleContainer label{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+
+    color: #64748B;
+}
+
+.CrudTopSection{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.CrudSearchBarContainer{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.CrudTopButtonsContainer{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.CrudTopButtonsContainer a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    width: 111px;
+    height: 36px;
+    background: #E98F00; 
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;    
+    color: #FFFFFF;
+
+    cursor: pointer;
+}
+
+.CrudSearchBarInput{
+    padding: 4px 0px 4px 8px;
+    width: 320px;
+    height: 32px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #64748B;
+}
+
+.CrudSearchBarInput::placeholder{
+    color: #94a3b8;
+}
+
+.CrudPager{
+    background: #FFFFFF;
+    min-height: 300px;
+    width: 100%;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.CrudPagerFilters{
+    width: 100%;
+    height: 0px; /* todo: mudar pra 60 quando tiver algum filtro */
+}
+
+.CrudPagerItemsContainer {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.CrudPagerItemsContainer table{
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0px 10px;
+    text-align: left;
+}
+
+.CrudPagerItemsContainer thead tr {
+    background: #F8FAFC;
+    border-bottom: 1px solid #F1F5F9;
+    height: 36px;
+}
+
+.CrudPagerItemsContainer thead tr th{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 20px;
+    color: #64748B;
+    text-transform: uppercase;
+    padding: 0 20px;
+}
+
+.CrudPagerItemsContainer tbody td{
+    height: 50px;
+    border-bottom: 1px solid #F1F5F9;
+}
+
+.CrudPagerItemsContainer tbody tr td{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #64748B;
+    padding: 0 20px;
+}
+
+.CrudPagerItemsContainer tbody tr:hover {
+    background-color: #F8FAFC;
+}
+
+.AdminPagerButtonContainer{
+    min-width: 60px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.AdminPagerButton{
+    display: inline-block;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.AdminPagerButton img{
+    width: 100%;
+    height: 100%;
+}
+
+.AdminPagerNotFoundMessageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 100%;
+}
+
+.AdminPagerNotFoundMessageContainer label{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #64748B;
+}
+
+.ModalConfirmationDialogOutside {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.ModalConfirmationDialogInside {
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 100px;
+    border-radius: 20px;
+    margin-top: 45px;
+
+    position: relative;
+}
+
+.ModalConfirmationDialogTextContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #64748B;
+    padding: 0 20px;
+}
+
+.ModalConfirmationDialogButtonsContainer{
+    display: flex;
+    margin: 0 35px;
+}
+
+.ModalConfirmationDialogButtonsContainer div{
+    width: 50%;
+    display: flex;
+}
+
+.ModalConfirmationDialogButtonsContainer div:first-child {
+    justify-content: flex-start;
+}
+
+.ModalConfirmationDialogButtonsContainer div:last-child {
+    justify-content: flex-end;
+}
+
+.AdminConfirmButton{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 25px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px -1px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+
+    cursor: pointer;
+}
+
+.AdminConfirmButton.Big{
+    width: 70px;
+    height: 40px;
+}
+
+.AdminConfirmButton.Confirm {
+    background: #E98F00;
+}
+
+.AdminConfirmButton.Warning {
+    background: #FF4D4F;
+}
+
+.AdminConfirmButton.Gray {
+    background: rgb(177, 176, 176);
+}
+
+.ModalCrudOutside {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.ModalCrudInside {
+    background-color: white;
+    color: black;
+
+    width: 1000px;
+    height: 800px;
+    max-width: 90%;
+
+    border-radius: 20px;
+    margin-top: 45px;
+
+    position: relative;
+}
+
+.ModalCrudFormContainer{
+    margin: 20px;
+}
+
+.ModalCrudForm label{
+    display: inline-flex;
+    width: 30%;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 20px;
+    color: #64748B;
+    text-transform: uppercase;
+}
+
+.ModalCrudForm input, .ModalCrudForm select{
+    display: inline-flex;
+    width: 70%;
+
+    height: 30px;
+    padding: 5px;
+    margin: 0;
+
+    background: #FFFFFF;
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #64748B;
+}
+
+.ModalCrudForm select{
+    cursor: pointer;
+}
+
+.ModalCrudForm div{
+    height: 30px;
+    margin: 10px 0 0 0;
+}
+
+.ProductsSearchBox{
+    width: 70%;
+    display: inline-block;
+    margin: 0 !important;
+    height: 0 !important;
+}
+
+.ProductsSearchBox div{
+    margin: 0;
+}
+
+.ProductsSearchBox div div{
+    margin: 0 0;
+}
+
+.ProductsSearchBox div div input{
+    width: 100% !important;
+}
+
+.SelectedProductLabel{
+    width: auto !important;
+    margin-left: 10px !important;
+    font-weight: 600 !important;
+}
+
+.SelectedProductLabel:hover{
+    cursor: pointer;
+    background-color: #ff9393;
+    border: 5px solid #ff9393;
+    border-radius: 25px;
+}
+
+.ModalCrudButtons{
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.ModalCrudButtons div{
+    display: flex;
+    width: 50%;
+}
+
+.ModalCrudButtons a{
+    margin: 20px;
+}
+
+.ModalCrudButtons div:first-child{
+    justify-content: flex-start;
+}
+
+.ModalCrudButtons div:last-child {
+    justify-content: flex-end;
+}
+
+.ModalCrudImage{
+    height: 300px !important;
+    display: flex;
+}
+
+.ModalCrudFormImageContainer{
+    width: 70%;
+    height: 280px !important;
+    display: inline-flex;
+}
+
+.ModalCrudFormImageContainer img{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .ModalCrudForm label {
+        width: 260px;
+    }
+
+    .ModalCrudForm input, .ModalCrudForm select{
+        width: calc(100% - 260px);
+    }
+
+    .ModalCrudFormImageContainer{
+        width: calc(100% - 260px);
+    }
+
+    .ProductsSearchBox{
+        width: calc(100% - 260px);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .AdminMain {
+        flex-direction: column;
+    }
+
+    .AdminSideMenu {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 0 0 0;
+    }
+
+    .AdminSideMenu p {
+        margin: 0;
+    }
+
+    .AdminSideMenu p:first-child {
+        margin-top: 0;
+    }
+
+    .AdminContent {
+        width: 100%;
+    }
+
+    .ModalCrudForm div{
+        width: 100%;
+        height: 50px;
+        margin: 10px 0 0 0;
+    }
+
+    .ModalCrudForm label {
+        display: block;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .ModalCrudForm input, .ModalCrudForm select {
+       display: block;
+       width: 100%;
+    }
+
+    .ModalCrudImage{
+        display: block;
+    }
+
+    .ModalCrudFormImageContainer{
+        height: 270px !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .AdminContent{
+        padding: 10px;
+    }
+
+    .CrudPagerItemsContainer thead tr th, .CrudPagerItemsContainer tbody tr td {
+        padding: 0 5px;
+    }
+}

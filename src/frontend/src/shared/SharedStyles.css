@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype'),
+         url('../assets/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('woff');
+}
+
+h1, h2, h3, h4, h5, h6, p, a, span, text, textarea{
+    font-family: Montserrat, sans-serif;
+}
+
+a{
+    cursor: pointer;
+}
+
+.Title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+    color: #222222;
+
+    display: inline-block;
+
+    margin-bottom: 20px;
+    padding-bottom: 4px;
+}
+
+.TitleWithBorderBottom{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+    color: #222222;
+
+    display: inline-block;
+
+    margin-bottom: 20px;
+    padding-bottom: 4px;
+    border: 0px transparent;
+    border-bottom: #E98F00;
+    border-style: solid;
+}
+
+.Subtitle{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 33px;
+    color: #222222;
+}
+
+.SubtitleSmall{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 33px;
+    color: #222222;
+}
+
+.Text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: #222222;
+}
+
+.Text.Small{
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.ButtonGradient{
+    width: 149px;
+    height: 42px;
+    background: linear-gradient(91.21deg, #E98F00 -1.98%, #E98F00 36.4%, #ffab25 103.86%);
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
+    border-radius: 3px;
+    border: none;
+
+    align-items: center;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+
+    cursor:pointer;
+}
+
+.ButtonGradient.Small{
+    width: 80px;
+    height: 30px;
+
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.ButtonDark {
+    width: 149px;
+    height: 42px;
+    background: #E98F00 36.4%;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
+    border-radius: 3px;
+    border: none;
+
+    align-items: center;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+
+    cursor: pointer;
+}
+
+.ButtonDark.Small {
+    width: 80px;
+    height: 30px;
+
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.ButtonLight {
+    width: 149px;
+    height: 42px;
+    background: #E98F00 103.86%;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
+    border-radius: 3px;
+    border: none;
+
+    align-items: center;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+
+    cursor: pointer;
+}
+
+.ButtonLight.Small {
+    width: 80px;
+    height: 30px;
+
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.AddButtonGreen{
+    background-color: #E98F00;
+    border-radius: 15px;
+    border: none;
+    width: fit-content;
+    height: fit-content;
+    min-width: 94px;
+    min-height: 21px;
+    padding: 0 5px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 18px;
+    color: #FFFFFF;
+    box-shadow: -3px 3px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.AddButtonGreen:hover{
+    background-color: #08aa54;
+    cursor: pointer;
+}
+
+.AddButtonGreen.Big{
+    min-width: 120px;
+    min-height: 35px;
+    font-size: 14px;
+}
+
+.PageContentContainer{
+    max-width: 1900px;
+    margin: 10px 50px 50px 50px;
+}
+
+.GenericTextInput{
+    height: 30px;
+    width: 150px;
+    margin: 0;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(238, 244, 252);
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 650px){
+    .PageContentContainer{
+        margin: 10px;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width: 2000px){
+    .PageContentContainer{
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,80 @@
+.MapsIframe{
+    width: 100%;
+    height: 239px;
+}
+
+.MapsIframeContainer{
+    width: 100%;
+    height: 239px;
+    margin-top: 40px;
+}
+
+.MapsText{
+    margin-top: 14px;
+}
+
+.MapsText p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #222222;
+}
+
+.FormContainer{
+    margin-top: 70px;
+}
+
+.FormInput{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+
+    background: #F4F4F4;
+    border-color: transparent;
+    border-radius: 4px;
+
+    height: 56px;
+    padding: 0 10px;
+    margin: 10px 0px;
+}
+
+textarea.FormInput{
+    height: 300px;
+    resize: none;
+}
+
+.FormInput.Half{
+    width: 100%
+}
+
+.FormInput.Full{
+    width: 100%;
+}
+
+.ButtonGradient{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 650px){
+    .FormInput.Half{
+        width: 100%;
+    }
+
+    .FormInput.Half:nth-of-type(2n){
+        margin-left: 0px;
+    }
+
+    .MapsIframeContainer{
+        margin-top: 0px;
+    }
+
+    .BreadcumbContainer{
+        margin: 30px 0 10px 0px;
+    }
+}

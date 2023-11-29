@@ -1,0 +1,145 @@
+.progressCont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 0 1% 0;
+}
+.progressCont img{
+    width: 100%;
+}
+.noCloseImg{
+    min-width: 15%;
+    max-height: 1px;
+    height: 5px;
+    border: 1.8px #e2e2e2 solid;
+    margin: 0px 2%;
+}
+.itemProgress{
+    width: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.itemProgress p{
+    margin-top: 5px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 165.5%;
+    color: #000000;
+}
+#itemOne{
+    border-bottom: #E98F00 2px solid;
+}
+.noItemCart{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    display: flex;
+    line-height: 140.5%;
+    align-items: center;
+    justify-content: center;
+    margin: 5% 0 5% 0;
+}
+.imageContProduct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    width: 25%;
+    margin-top: 3%;
+    height: 300px;
+    margin-left: 7%;
+    cursor: pointer;
+}
+
+.ProductImgContainerCart {
+    height: 300px;
+    width: 254px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-style: solid;
+    margin: 0 30px;
+    border: 1px solid #0000001a;
+    border-radius: 4px;
+
+    padding: 8px;
+
+    cursor: pointer;
+}
+
+.ProductImgContainerCart img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+.infoContProduct{
+    width: 50%;
+}
+.cartItensCont{
+    display: flex;
+    justify-content: flex-start;
+    width: 75%;
+    align-items: center;
+    padding-bottom: 2%;
+}
+.productsCartCont{
+	margin-bottom: 2%;
+}
+.btnCart{
+    background: linear-gradient(91.21deg, #E98F00 -1.98%, #E98F00 36.4%, #f5a320 103.86%);
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
+    border-radius: 3px;
+}	
+.deleteIcon{cursor: pointer;}	
+
+.productDescription{
+    margin: 3%;
+}
+.descTitle{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 165.5%;
+    color: #222222;
+    display: inline;
+    border-bottom: 2px solid #E98F00;
+    padding: 0 0 5px 0;
+}
+.descTitleCont{
+    width: 100%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+}
+.descCont{
+    padding-top: 20px;
+}
+.deleteIconCont{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.deleteIcon{
+    width: 25px;
+    height: 25px;
+    margin: 4px 0 3% 20px;
+}
+.buttonsNextCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3%;
+}
+.allCartComponentCont{
+    width: 100%;
+}
